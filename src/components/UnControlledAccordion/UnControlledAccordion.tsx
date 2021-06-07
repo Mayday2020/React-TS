@@ -5,7 +5,6 @@ type AccordionPropsType = {
     //collapsed: boolean
 }
 function UnControlledAccordion(props: AccordionPropsType) {
-    console.log('UnControlledAccordion rendering...')
     //const collapsed = true
     let [collapsed, setCollapsed] = useState(false);
     if (collapsed) {
