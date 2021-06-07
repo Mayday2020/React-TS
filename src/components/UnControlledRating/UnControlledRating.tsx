@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 
-/*type RatingPropsType = {
-    value: number
-}*/
-export function UnControlledRating(props: any) {
+type RatingPropsType = {
+    value?: number
+}
+export function UnControlledRating(props: RatingPropsType) {
     console.log('Ratting rendering...')
     let [value, setValue] = useState(0)
         return (
