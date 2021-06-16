@@ -4,16 +4,16 @@ import Accordion from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
 import UncontrolledAccordion from "./components/UnControlledAccordion/UnControlledAccordion";
 import {UnControlledRating} from "./components/UnControlledRating/UnControlledRating";
+import OnOff from "./components/OnOff/OnOff";
 
 function App() {
     console.log('App rendering...')
     return (
-        <div>
+        <div className={'App'}>
             <PageTitle title={'This is App component'}/>
+            <OnOff />
             <UncontrolledAccordion titleValue='Users' />
-            <UncontrolledAccordion titleValue='Menu' />
             <Accordion titleValue='Menu' collapsed={false}/>
-            <Accordion titleValue='Users' collapsed={true}/>
             <Rating value={3}/>
             <UnControlledRating />
         </div>
