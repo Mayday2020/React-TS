@@ -36,10 +36,10 @@ export const SimpleExample1 = () => {
     const [fake, setFake] = useState(1)
     console.log('SimpleExample done!')
     useEffect(()=>{
-        setInterval(()=>{
+        /*setInterval(()=>{
             console.log('setInterval done!')
             setCounter(state => state + 1)
-        }, 1000)
+        }, 1000)*/
     }, [])
 
 
